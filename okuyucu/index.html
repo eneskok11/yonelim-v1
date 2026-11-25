@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr" data-theme="light"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Yönelim — sayfa çevirmeli okuyucu örneği</title>
+<link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/style.css">
+<style>
+.demo-band{background:var(--ink);color:var(--paper);font-family:var(--ui);font-size:14px;padding:10px 0}
+.demo-band .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+.demo-head{text-align:center;padding:34px 0 18px;border-bottom:3px double var(--ink)}
+.demo-head img{display:block;margin:0 auto;width:min(340px,70vw);height:auto}
+.demo-sec{padding:36px 0 44px;border-bottom:1px solid var(--rule)}
+.demo-sec > h2{font-size:clamp(24px,3vw,32px);margin:6px 0 8px}
+.demo-sec > p.dek{max-width:68ch;margin:0 0 26px;color:var(--body)}
+.demo-lead{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:40px}
+.demo-hero{background:var(--paper-2);display:grid;place-items:center;min-height:420px;color:var(--muted);font-family:var(--ui);font-size:14px;text-align:center;padding:24px}
+.demo-notes{font-family:var(--ui);font-size:14.5px;line-height:1.6;color:var(--body);max-width:72ch}
+.demo-notes li{margin:6px 0}
+@media (max-width:900px){.demo-lead{grid-template-columns:1fr}.demo-hero{min-height:200px}}
+@media print{@page{size:A4;margin:14mm 14mm 16mm}.demo-band{print-color-adjust:exact;-webkit-print-color-adjust:exact}.demo-lead{grid-template-columns:1fr}h2{break-after:avoid}.issue,.sitem{break-inside:avoid}}
+</style></head>
+<body>
+<div class="demo-band"><div class="wrap"><span><b>Örnek sayfa</b> · yonelimgazetesi.com için sayfa çevirmeli okuyucu</span><span>Niji Tech · 25 Kasım 2026</span></div></div>
+<main class="wrap">
+<header class="demo-head"><img src="assets/logo.png" alt="Yönelim"><p class="kicker" style="margin-top:10px">Haftalık Kültürel Gazete</p></header>
+
+<section class="demo-sec">
+<span class="kicker">Deneyin</span>
+<h2>Kapağa basın, sayı dergi gibi açılsın</h2>
+<p class="dek">Kırmızı “Oku” şeridi çıkan kapaklar (Sayı 1, 2 ve 5) açılır. Sayfayı köşesinden sürükleyerek, kenardaki oklarla ya da klavyenin ok tuşlarıyla çevirebilirsiniz; telefonda parmakla kaydırmanız yeterli. Çevirirken kâğıt sesi çıkar, sağ üstteki hoparlörden kapatılır.</p>
+<div class="demo-lead">
+<div class="demo-hero">Ana sayfada bu alanda manşet yazısı durur.<br>“Sayılar” kutusu sağ sütunda, haftanın yazılarının altında yer alır.</div>
+<aside class="side"><div class="list side-issues"><h4>Sayılar</h4><div class="sgrid"><div class="sitem"><span class="cv"><img src="kapak/kapak-17.jpg" alt="Yönelim Sayı 17 kapağı" width="730" height="1024"></span><span class="sno">Sayı 17</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-16.jpg" alt="Yönelim Sayı 16 kapağı" width="730" height="1024"></span><span class="sno">Sayı 16</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-15.jpg" alt="Yönelim Sayı 15 kapağı" width="730" height="1024"></span><span class="sno">Sayı 15</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-14.jpg" alt="Yönelim Sayı 14 kapağı" width="730" height="1024"></span><span class="sno">Sayı 14</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-13.jpg" alt="Yönelim Sayı 13 kapağı" width="730" height="1024"></span><span class="sno">Sayı 13</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-12.jpg" alt="Yönelim Sayı 12 kapağı" width="730" height="1024"></span><span class="sno">Sayı 12</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-11.jpg" alt="Yönelim Sayı 11 kapağı" width="730" height="1024"></span><span class="sno">Sayı 11</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-10.jpg" alt="Yönelim Sayı 10 kapağı" width="730" height="1024"></span><span class="sno">Sayı 10</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-9.jpg" alt="Yönelim Sayı 9 kapağı" width="730" height="1024"></span><span class="sno">Sayı 9</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-8.jpg" alt="Yönelim Sayı 8 kapağı" width="730" height="1024"></span><span class="sno">Sayı 8</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-7.jpg" alt="Yönelim Sayı 7 kapağı" width="730" height="1024"></span><span class="sno">Sayı 7</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-6.jpg" alt="Yönelim Sayı 6 kapağı" width="730" height="1024"></span><span class="sno">Sayı 6</span></div><div class="sitem"><a class="cv" href="pdf/sayi-05-onizleme.pdf" data-sayi-pdf="pdf/sayi-05-onizleme.pdf" data-sayi-ad="Sayı 5: 20 – 26 Ağustos 2026" aria-label="Sayı 5: 20 – 26 Ağustos 2026 — sayfaları çevirerek oku"><img src="kapak/kapak-5.jpg" alt="Yönelim Sayı 5 kapağı" width="730" height="1024"><span class="read">Oku</span></a><span class="sno">Sayı 5</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-4.jpg" alt="Yönelim Sayı 4 kapağı" width="730" height="1024"></span><span class="sno">Sayı 4</span></div><div class="sitem"><span class="cv"><img src="kapak/kapak-3.jpg" alt="Yönelim Sayı 3 kapağı" width="730" height="1024"></span><span class="sno">Sayı 3</span></div><div class="sitem"><a class="cv" href="pdf/sayi-02-onizleme.pdf" data-sayi-pdf="pdf/sayi-02-onizleme.pdf" data-sayi-ad="Sayı 2: 30 Temmuz – 5 Ağustos 2026" aria-label="Sayı 2: 30 Temmuz – 5 Ağustos 2026 — sayfaları çevirerek oku"><img src="kapak/kapak-2.jpg" alt="Yönelim Sayı 2 kapağı" width="730" height="1024"><span class="read">Oku</span></a><span class="sno">Sayı 2</span></div><div class="sitem"><a class="cv" href="pdf/sayi-01-onizleme.pdf" data-sayi-pdf="pdf/sayi-01-onizleme.pdf" data-sayi-ad="Sayı 1: 23 – 29 Temmuz 2026" aria-label="Sayı 1: 23 – 29 Temmuz 2026 — sayfaları çevirerek oku"><img src="kapak/kapak-1.jpg" alt="Yönelim Sayı 1 kapağı" width="730" height="1024"><span class="read">Oku</span></a><span class="sno">Sayı 1</span></div></div><a class="sall" href="#sayilar">Tüm sayılar →</a></div></aside>
+</div>
+</section>
+
+<section class="demo-sec" id="sayilar">
+<span class="kicker">Sayılar sayfası</span>
+<h2>Bütün sayılar tek sayfada</h2>
+<p class="dek">En yeni sayı büyük, öncekiler altta. Kapağa basınca sayı açılır; altındaki bağlantı o sayının sitedeki yazılarına götürür.</p>
+<section class="issues"><div class="issue-latest"><span class="kicker">Son sayı</span><div class="issue big"><span class="cv"><img src="kapak/kapak-17.jpg" alt="Yönelim Sayı 17 kapağı" width="730" height="1024"></span><span class="cap">Sayı 17: 12 Kasım – 18 Kasım 2026</span></div></div>
+<h2 class="sec-h issue-h">Önceki sayılar</h2><div class="issue-grid"><div class="issue"><span class="cv"><img src="kapak/kapak-16.jpg" alt="Yönelim Sayı 16 kapağı" width="730" height="1024"></span><span class="cap">Sayı 16: 5 Kasım – 11 Kasım 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-15.jpg" alt="Yönelim Sayı 15 kapağı" width="730" height="1024"></span><span class="cap">Sayı 15: 29 Ekim – 4 Kasım 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-14.jpg" alt="Yönelim Sayı 14 kapağı" width="730" height="1024"></span><span class="cap">Sayı 14: 22 Ekim – 28 Ekim 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-13.jpg" alt="Yönelim Sayı 13 kapağı" width="730" height="1024"></span><span class="cap">Sayı 13: 15 Ekim – 21 Ekim 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-12.jpg" alt="Yönelim Sayı 12 kapağı" width="730" height="1024"></span><span class="cap">Sayı 12: 8 Ekim – 14 Ekim 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-11.jpg" alt="Yönelim Sayı 11 kapağı" width="730" height="1024"></span><span class="cap">Sayı 11: 1 Ekim – 7 Ekim 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-10.jpg" alt="Yönelim Sayı 10 kapağı" width="730" height="1024"></span><span class="cap">Sayı 10: 24 Eylül – 30 Eylül 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-9.jpg" alt="Yönelim Sayı 9 kapağı" width="730" height="1024"></span><span class="cap">Sayı 9: 17 Eylül – 23 Eylül 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-8.jpg" alt="Yönelim Sayı 8 kapağı" width="730" height="1024"></span><span class="cap">Sayı 8: 10 – 16 Eylül 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-7.jpg" alt="Yönelim Sayı 7 kapağı" width="730" height="1024"></span><span class="cap">Sayı 7: 3 – 9 Eylül 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-6.jpg" alt="Yönelim Sayı 6 kapağı" width="730" height="1024"></span><span class="cap">Sayı 6: 27 Ağustos – 2 Eylül 2026</span></div><div class="issue"><a class="cv" href="pdf/sayi-05-onizleme.pdf" data-sayi-pdf="pdf/sayi-05-onizleme.pdf" data-sayi-ad="Sayı 5: 20 – 26 Ağustos 2026" aria-label="Sayı 5: 20 – 26 Ağustos 2026 — sayfaları çevirerek oku"><img src="kapak/kapak-5.jpg" alt="Yönelim Sayı 5 kapağı" width="730" height="1024"><span class="read">Oku</span></a><span class="cap">Sayı 5: 20 – 26 Ağustos 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-4.jpg" alt="Yönelim Sayı 4 kapağı" width="730" height="1024"></span><span class="cap">Sayı 4: 13 – 19 Ağustos 2026</span></div><div class="issue"><span class="cv"><img src="kapak/kapak-3.jpg" alt="Yönelim Sayı 3 kapağı" width="730" height="1024"></span><span class="cap">Sayı 3: 6 – 12 Ağustos 2026</span></div><div class="issue"><a class="cv" href="pdf/sayi-02-onizleme.pdf" data-sayi-pdf="pdf/sayi-02-onizleme.pdf" data-sayi-ad="Sayı 2: 30 Temmuz – 5 Ağustos 2026" aria-label="Sayı 2: 30 Temmuz – 5 Ağustos 2026 — sayfaları çevirerek oku"><img src="kapak/kapak-2.jpg" alt="Yönelim Sayı 2 kapağı" width="730" height="1024"><span class="read">Oku</span></a><span class="cap">Sayı 2: 30 Temmuz – 5 Ağustos 2026</span></div><div class="issue"><a class="cv" href="pdf/sayi-01-onizleme.pdf" data-sayi-pdf="pdf/sayi-01-onizleme.pdf" data-sayi-ad="Sayı 1: 23 – 29 Temmuz 2026" aria-label="Sayı 1: 23 – 29 Temmuz 2026 — sayfaları çevirerek oku"><img src="kapak/kapak-1.jpg" alt="Yönelim Sayı 1 kapağı" width="730" height="1024"><span class="read">Oku</span></a><span class="cap">Sayı 1: 23 – 29 Temmuz 2026</span></div></div></section>
+</section>
+
+<section class="demo-sec">
+<span class="kicker">Bu örnekte</span>
+<h2>Bilmeniz gerekenler</h2>
+<ul class="demo-notes">
+<li><b>Önizleme:</b> Her sayının ilk 6 sayfası açık, son sayfada “devamı abonelere” notu çıkar. Abonelik kurulunca tam sayı yalnız abonelere ve arşiv satın alanlara açılacak; tam PDF'ler herkese açık bir adreste durmayacak.</li>
+<li><b>Gizlilik:</b> Okuyucu sitenin kendi sunucusundan çalışır; okurun tarayıcısından başka bir şirkete istek gitmez, çerez bırakılmaz.</li>
+<li><b>Yeni sayı eklemek:</b> Editör, Sayılar sayfasında kapak görselinin bağlantısını o sayının PDF'ine verir. Ana sayfadaki kutu ve okuyucu kendiliğinden güncellenir.</li>
+<li>Bu sayfa yalnızca örnektir; sitedeki yazılar ve sayfalar değişmedi.</li>
+</ul>
+</section>
+</main>
+<script>window.YONELIM_OKUYUCU={base:new URL("assets/okuyucu/",location.href).href,ver:"1.1.0"};</script>
+<script src="assets/yonelim.js"></script>
+</body></html>

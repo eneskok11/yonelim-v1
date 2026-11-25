@@ -1,0 +1,41 @@
+/* Yönelim — sayı okuyucu (okuyucu.js ile birlikte, yalnız açılınca yüklenir) */
+.okuyucu{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;background:#1b1813;color:#F3EFE7;
+  font-family:var(--ui,system-ui,sans-serif);padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0);
+  animation:ok-gel .22s ease-out}
+@keyframes ok-gel{from{opacity:0}to{opacity:1}}
+.okuyucu:focus{outline:none}
+.okuyucu .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ok-bar{flex:none;display:flex;align-items:center;gap:14px;padding:10px 14px 10px 20px;border-bottom:1px solid rgba(243,239,231,.14)}
+.ok-ad{font-family:var(--display,Georgia,serif);font-weight:600;font-size:17px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ok-no{font-size:13.5px;letter-spacing:.06em;color:rgba(243,239,231,.72);font-variant-numeric:tabular-nums}
+.okuyucu button{appearance:none;background:none;border:0;color:inherit;cursor:pointer;display:grid;place-items:center;border-radius:50%}
+.okuyucu button:focus-visible{outline:2px solid var(--red,#DB0306);outline-offset:2px}
+.okuyucu svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ok-bar button{width:40px;height:40px}
+.ok-bar button:hover{background:rgba(243,239,231,.1)}
+.ok-ses .kes{display:none}
+.okuyucu.sessiz .ok-ses .kes{display:inline}
+.okuyucu.sessiz .ok-ses .dalga{display:none}
+.ok-sahne{flex:1;min-height:0;position:relative;padding:22px 64px 26px}
+.ok-kitap{width:100%;height:100%}
+.ok-s{background:#fff;overflow:hidden}
+.ok-s canvas{display:block;width:100%;height:100%}
+.ok-s .ok-yuk{position:absolute;inset:0;display:grid;place-items:center;color:#b9b2a6;font-size:13px;letter-spacing:.1em}
+.ok-s.hazir .ok-yuk{display:none}
+.ok-s:not(.hazir) canvas{visibility:hidden}
+.ok-durum{position:absolute;inset:0;display:grid;place-items:center;margin:0;font-size:15px;color:rgba(243,239,231,.8);text-align:center;padding:24px}
+.ok-durum[hidden]{display:none}
+.ok-durum a{color:#fff;margin-left:6px}
+.ok-git{position:absolute;top:50%;width:48px;height:48px;margin-top:-24px;background:rgba(243,239,231,.08)!important;z-index:2}
+.ok-git:hover{background:rgba(243,239,231,.18)!important}
+.ok-git[hidden]{display:none!important}
+.ok-onceki{left:8px}
+.ok-sonraki{right:8px}
+@media (max-width:700px){
+  .ok-sahne{padding:12px 10px 16px}
+  .ok-git{top:auto;bottom:10px;margin:0;width:44px;height:44px;background:rgba(27,24,19,.7)!important}
+  .ok-bar{padding-left:14px;gap:8px}
+  .ok-ad{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){.okuyucu{animation:none}}
+@media print{.okuyucu{display:none!important}}
